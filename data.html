@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Cozy Weather App</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- 🌄 Main Container -->
+  <div class="weather-app">
+
+    <!-- 🌿 Top Navigation -->
+    <nav class="navbar">
+
+      <div class="logo">
+        NIMBUS
+      </div>
+
+      <div class="search-box">
+        <i class="fa-solid fa-location-dot"></i>
+        <input type="text" placeholder="Search city...">
+      </div>
+
+      <div class="menu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+    </nav>
+
+    <!-- Main Weather Content -->
+    <div class="main-content">
+
+      <!-- LEFT SIDE -->
+      <div class="left-panel">
+
+        <div class="weather-icon">
+          <i class="fa-solid fa-cloud-sun"></i>
+        </div>
+
+        <h1 class="temperature">22°C</h1>
+
+        <h2 class="city">Kyoto, Japan</h2>
+
+        <p class="description">
+          Calm cloudy evening with soft winds.
+        </p>
+
+        <div class="extra-info">
+
+          <div class="info-box">
+            <span>Sunrise</span>
+            <p>5:42 AM</p>
+          </div>
+
+          <div class="info-box">
+            <span>Humidity</span>
+            <p>42%</p>
+          </div>
+
+          <div class="info-box">
+            <span>Wind</span>
+            <p>8 km/h</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT GLASS PANEL -->
+      <div class="right-panel">
+
+        <h3>Hourly Forecast</h3>
+
+        <div class="hourly-container" id="hourly-container">
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- 📅 Bottom Forecast -->
+    <div class="forecast-section" id="forecast-section">
+
+    </div>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>

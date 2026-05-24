@@ -1,0 +1,330 @@
+/* 🌿 RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 🌅 BODY */
+
+body{
+    font-family: 'Poppins', sans-serif;
+
+    height: 100vh;
+
+    background-image:
+    linear-gradient(
+        rgba(10,10,20,0.35),
+        rgba(10,10,20,0.55)
+    ),
+    url("https://images.unsplash.com/photo-1506744038136-46273834b3fb");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+
+    overflow: hidden;
+}
+
+/* 🌿 MAIN APP */
+
+.weather-app{
+    width: 100%;
+    height: 100vh;
+
+    padding: 30px 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* 🌸 NAVBAR */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+/* SEARCH */
+
+.search-box{
+    width: 320px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background: rgba(255,255,255,0.12);
+
+    padding: 12px 18px;
+
+    border-radius: 30px;
+
+    backdrop-filter: blur(10px);
+}
+
+.search-box input{
+    background: transparent;
+    border: none;
+    outline: none;
+
+    color: white;
+
+    width: 100%;
+
+    font-size: 1rem;
+}
+
+.search-box input::placeholder{
+    color: rgba(255,255,255,0.7);
+}
+
+/* MENU */
+
+.menu{
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+/* 🌤️ MAIN CONTENT */
+
+.main-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 50px;
+}
+
+/* 🌿 LEFT PANEL */
+
+.left-panel{
+    width: 45%;
+}
+
+/* WEATHER ICON */
+
+.weather-icon{
+    font-size: 4rem;
+
+    margin-bottom: 20px;
+
+    color: #ffe082;
+}
+
+/* TEMPERATURE */
+
+.temperature{
+    font-size: 7rem;
+    font-weight: 600;
+
+    line-height: 1;
+}
+
+/* CITY */
+
+.city{
+    margin-top: 15px;
+
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+/* DESCRIPTION */
+
+.description{
+    margin-top: 10px;
+
+    font-size: 1rem;
+
+    color: rgba(255,255,255,0.8);
+}
+
+/* EXTRA INFO */
+
+.extra-info{
+    margin-top: 40px;
+
+    display: flex;
+    gap: 20px;
+}
+
+/* INFO BOX */
+
+.info-box{
+    background: rgba(255,255,255,0.12);
+
+    padding: 15px 20px;
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(10px);
+
+    min-width: 120px;
+}
+
+.info-box span{
+    font-size: 0.8rem;
+
+    color: rgba(255,255,255,0.7);
+}
+
+.info-box p{
+    margin-top: 5px;
+
+    font-size: 1.1rem;
+}
+
+/* 🌸 RIGHT PANEL */
+
+.right-panel{
+    width: 40%;
+
+    background: rgba(255,255,255,0.12);
+
+    padding: 30px;
+
+    border-radius: 30px;
+
+    backdrop-filter: blur(12px);
+}
+
+/* PANEL TITLE */
+
+.right-panel h3{
+    margin-bottom: 25px;
+
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+/* HOURLY CONTAINER */
+
+.hourly-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* HOURLY CARD */
+
+.hour-card{
+    flex: 1;
+
+    background: rgba(255,255,255,0.08);
+
+    padding: 20px 10px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.hour-card:hover{
+    transform: translateY(-5px);
+
+    background: rgba(255,255,255,0.18);
+}
+
+.hour-card p{
+    margin-bottom: 12px;
+
+    font-size: 0.9rem;
+}
+
+.hour-card i{
+    font-size: 1.5rem;
+
+    margin-bottom: 12px;
+
+    color: #ffe082;
+}
+
+.hour-card span{
+    font-size: 1.1rem;
+}
+
+/* 📅 FORECAST SECTION */
+
+.forecast-section{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    margin-top: 50px;
+}
+
+/* FORECAST CARD */
+
+.forecast-card{
+    flex: 1;
+
+    background: rgba(255,255,255,0.10);
+
+    padding: 20px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    backdrop-filter: blur(10px);
+
+    transition: 0.3s;
+}
+
+.forecast-card:hover{
+    transform: translateY(-6px);
+
+    background: rgba(255,255,255,0.18);
+}
+
+.forecast-card p{
+    margin-bottom: 12px;
+
+    font-size: 1rem;
+}
+
+.forecast-card i{
+    font-size: 2rem;
+
+    margin-bottom: 15px;
+
+    color: #ffe082;
+}
+
+.forecast-card span{
+    font-size: 1.2rem;
+}
+
+/* 🌿 RESPONSIVE */
+
+@media(max-width: 1000px){
+
+    .main-content{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .left-panel,
+    .right-panel{
+        width: 100%;
+    }
+
+    .forecast-section{
+        overflow-x: auto;
+    }
+}
